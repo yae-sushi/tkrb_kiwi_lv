@@ -131,6 +131,8 @@ if get_exp == "I know.":
     original_input = exp_remaining
     exp_remaining = validate_exp_remaining(exp_remaining)
 else:
+    if get_exp == "The toudan is max level (99).":
+        cur_lv = 99
     exp_remaining = -1
 
 # make preds from user input
