@@ -15,8 +15,8 @@ KIWI_REQUIREMENTS = {
 TYPE_TO_CATEGORY = {
     "Tantou" : "Tantouwame",
     "Wakizashi" : "Waki, Yari, Nagiwame",
-    "Uchigatana (Rarity 3)" : "R3 Uchiwame",
-    "Uchigatana (Rarity 4)" : "R4 Uchiwame",
+    "Uchigatana (Current Rarity 2)" : "R3 Uchiwame",
+    "Uchigatana (Current Rarity 3)" : "R4 Uchiwame",
     "Tachi" : "Tachiwame",
     "Ootachi" : "Ootachiwame",
     "Yari" : "Waki, Yari, Nagiwame",
