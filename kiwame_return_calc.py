@@ -119,7 +119,13 @@ sword_type = TYPE_TO_CATEGORY[st.radio(
     "Sword type?",
     list(TYPE_TO_CATEGORY.keys()))]
 
-cur_lv = st.slider("Current toudan level?", 1, 99, 60)
+if sword_type != "Tsurugiwame":
+    start_slider_lv = KIWI_REQUIREMENTS[sword_type]
+else:
+    start_slider_lv = KIWI_REQUIREMENTS["Tantouwame"]
+
+cur_lv = st.slider("Current toudan level?", 1, 99,
+                    start_slider_lv)
 
 get_exp = st.radio("Do you know how much EXP is needed until the next level?",
             ["I don't know.",
