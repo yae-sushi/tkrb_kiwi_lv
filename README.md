@@ -14,3 +14,7 @@ This is a Streamlit app written for fun. It informs the user what level their sw
 ## Attributions:
 
 The information required to make this calculator was scraped via BeautifulSoup from the Touken Ranbu wikia located at https://touken-ranbu.fandom.com/, and is included in .csv form (tkrb_exp.csv) in this repository.
+
+## Other:
+
+I also maintain a character ranking sorter for the game at https://tkrbsorter.tumblr.com/, which may be of interest. (Although I only have precursory knowledge of HTML/CSS/Javascript. Plus it's built off of other people's code.)
