@@ -2,7 +2,7 @@
 
 ## About:
 
-This is a Streamlit app that informs the user what level their sword character will return as from kiwame training in the game Touken Ranbu ONLINE (aka TKRB). It is mainly meant for use with characters that have not yet achieved level 99, given the game's recent changes allowing untrained swords to store "extra" EXP (which unfortunately cannot be tracked). The app can be accessed here: https://share.streamlit.io/yae-sushi/tkrb_kiwi_lv/main/kiwame_return_calc.py. All written for fun.
+This is a Streamlit app that informs the user what level their sword character will return as from kiwame training in the game Touken Ranbu ONLINE (aka TKRB). It can be used in two ways: through showing how much exp is remaining for characters below level 99 until their next level, or by inputting the cumulative EXP an untrained character currently has (given the game's recent UI changes allowing users to see "extra" EXP, as well as the ability for untrained swords to store "extra" EXP at level 99). The app can be accessed here: https://share.streamlit.io/yae-sushi/tkrb_kiwi_lv/main/kiwame_return_calc.py. All written for fun.
 
 ## Files:
 
@@ -13,8 +13,8 @@ This is a Streamlit app that informs the user what level their sword character w
 
 ## Attributions:
 
-The information required to make this calculator was scraped via BeautifulSoup from the Touken Ranbu wikia located at https://touken-ranbu.fandom.com/, and is included in .csv form (tkrb_exp.csv) in this repository.
+The information required to make this calculator was scraped via BeautifulSoup from the Touken Ranbu wikia located at https://touken-ranbu.fandom.com/, and is included in .csv form (tkrb_exp.csv) in this repository. Any changes to the wikia since the scrape are not reflected in the data.
 
 ## Other:
 
-I also maintain a character ranking sorter for the game at https://tkrbsorter.tumblr.com/, which may be of interest. (Although I only have precursory knowledge of HTML/CSS/Javascript. Plus it's built off of other people's code.)
+I also maintain a character ranking sorter for the game at https://tkrbsorter.tumblr.com/, which may be of interest.
