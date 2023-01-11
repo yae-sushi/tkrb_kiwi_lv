@@ -138,7 +138,7 @@ if is_cum_exp:
     exp = st.text_input('Amount of cumulative EXP?',
                     value = "Your number here")
     original_input = exp
-    exp = validate_exp_remaining(exp)
+    exp = validate_exp_remaining(exp, is_cum_exp)
 
 else:
     if sword_type != "Tsurugiwame":
