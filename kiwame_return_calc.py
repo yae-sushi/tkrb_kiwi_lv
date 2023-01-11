@@ -127,7 +127,7 @@ st.subheader("Sword type?")
 sword_type = TYPE_TO_CATEGORY[st.radio(
     "Sword type?",
     list(TYPE_TO_CATEGORY.keys()),
-    label_visibility = False)]
+    label_visibility = "hidden")]
 
 st.subheader("""**NEW:** I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?
                         \n([How do I find the cumulative EXP?](https://i.imgur.com/PgU2Ws7.png))""")
@@ -135,7 +135,7 @@ is_cum_exp = st.radio("""**NEW:** I can now calculate the return level based on 
                         \n([How do I find the cumulative EXP?](https://i.imgur.com/PgU2Ws7.png))""",
             ["Yes",
             "No"],
-            label_visibility = False)
+            label_visibility = "hidden")
 
 if is_cum_exp == "Yes":
     is_cum_exp = True
@@ -146,7 +146,7 @@ if is_cum_exp:
     st.subheader("Amount of cumulative EXP?")
     exp = st.text_input('Amount of cumulative EXP?',
                     value = "Your number here",
-                    label_visibility = False)
+                    label_visibility = "hidden")
     original_input = exp
     exp = validate_exp_remaining(exp, is_cum_exp)
     cur_lv = -1
@@ -160,19 +160,19 @@ else:
     st.subheader("Current toudan level?")
     cur_lv = st.slider("Current toudan level?", 1, 99,
                         start_slider_lv,
-                        label_visibility = False)
+                        label_visibility = "hidden")
 
     st.subheader("Do you know how much EXP is needed until the next level?")
     get_exp = st.radio("Do you know how much EXP is needed until the next level?",
                 ["I don't know.",
                 "The toudan is max level (99).",
                 "I know."],
-                label_visibility = False)
+                label_visibility = "hidden")
     if get_exp == "I know.":
         st.subheader("EXP remaining until next level?")
         exp = st.text_input('EXP remaining until next lv?',
                         value = "1",
-                        label_visibility = False)
+                        label_visibility = "hidden")
         original_input = exp
         exp = validate_exp_remaining(exp)
     else:
