@@ -128,7 +128,7 @@ sword_type = TYPE_TO_CATEGORY[st.radio(
     list(TYPE_TO_CATEGORY.keys()))]
 
 is_cum_exp = st.radio("""**NEW:** I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?
-                        [How do I find the cumulative EXP?](https://i.imgur.com/PgU2Ws7.png)""",
+                        \n([How do I find the cumulative EXP?](https://i.imgur.com/PgU2Ws7.png))""",
             ["Yes",
             "No"])
 
