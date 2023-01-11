@@ -178,7 +178,7 @@ if exp == None:
     else:
         st.write(f"{original_input} is not a valid answer. Please try again.")
 else:
-    tsurugi_text = "No tsurugi currently has a kiwame form. :( \
+    tsurugi_text = "No tsurugi currently has a kiwame form. :( \n\
                     However, if we assume that they'll follow the same exp requirements \
                     as ootachis..."
     try:
