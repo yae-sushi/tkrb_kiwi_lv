@@ -185,9 +185,9 @@ else:
     if prediction:
         output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
     else:
-        output_text = f"""Your sword is currently unable to kiwame.
-            To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
-            higher."""
+        output_text = f"Your sword is currently unable to kiwame. \
+            To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or \
+            higher."
 
     if sword_type == "Tsurugiwame":
         output_text = tsurugi_text + output_text
