@@ -51,7 +51,7 @@ def calc_extra_exp(cur_lv, sword_type, exp, is_cum_exp):
         exp_diff = int(cur_exp) - int(base_exp_needed)
         return exp_diff
     
-    exp_diff = int(cur_exp) - int(base_exp_needed)
+    exp_diff = int(exp) - int(base_exp_needed)
     return exp_diff
 
 def return_level(cur_lv, sword_type, exp = -1, is_cum_exp = False):
