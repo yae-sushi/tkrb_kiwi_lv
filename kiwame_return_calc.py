@@ -139,6 +139,7 @@ if is_cum_exp:
                     value = "Your number here")
     original_input = exp
     exp = validate_exp_remaining(exp, is_cum_exp)
+    cur_lv = -1
 
 else:
     if sword_type != "Tsurugiwame":
