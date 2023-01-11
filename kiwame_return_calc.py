@@ -161,7 +161,7 @@ else:
         exp = st.text_input('EXP remaining until next lv?',
                         value = "1")
         original_input = exp
-        exp = validate_exp_remaining(exp)
+        exp = validate_exp_remaining(exp, is_cum_exp)
     else:
         if get_exp == "The toudan is max level (99).":
             cur_lv = 99
