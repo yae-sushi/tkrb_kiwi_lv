@@ -181,10 +181,10 @@ else:
     tsurugi_text = "No tsurugi currently has a kiwame form. :(  \n\
                     However, if we assume that they'll follow the same exp requirements \
                     as ootachis...  \n"
-    try:
-        prediction = return_level(int(cur_lv), sword_type, int(exp), is_cum_exp)
+    prediction = return_level(int(cur_lv), sword_type, int(exp), is_cum_exp)
+    if prediction:
         output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
-    except:
+    else:
         output_text = f"""Your sword is currently unable to kiwame.
             To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
             higher."""
