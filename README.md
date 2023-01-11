@@ -2,7 +2,14 @@
 
 ## About:
 
-This is a Streamlit app that informs the user what level their sword character will return as from kiwame training in the game Touken Ranbu ONLINE (aka TKRB). It can be used in two ways: through showing how much exp is remaining for characters below level 99 until their next level, or by inputting the cumulative EXP an untrained character currently has (given the game's recent UI changes allowing users to see "extra" EXP, as well as the ability for untrained swords to store "extra" EXP at level 99). The app can be accessed here: https://share.streamlit.io/yae-sushi/tkrb_kiwi_lv/main/kiwame_return_calc.py. All written for fun.
+This is a Streamlit app that informs the user what level their sword character will return as from kiwame training in the game [Touken Ranbu ONLINE (aka TKRB)](https://www.johren.net/games/tohken-en/play/).
+
+It can be used in two ways:
+
+- through showing how much exp is remaining for characters below level 99 until their next level, or
+- by inputting the cumulative EXP an untrained character currently has (given the game's recent UI changes allowing users to see "extra" EXP, as well as the ability for untrained swords to store "extra" EXP at level 99).
+
+The app can be accessed here: https://share.streamlit.io/yae-sushi/tkrb_kiwi_lv/main/kiwame_return_calc.py. All written for fun.
 
 ## Files:
 
