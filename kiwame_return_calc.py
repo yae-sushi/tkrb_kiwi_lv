@@ -71,6 +71,8 @@ def return_level(cur_lv, sword_type, exp = -1, is_cum_exp = False):
     extra_exp = calc_extra_exp(cur_lv, sword_type, exp, is_cum_exp)
     if extra_exp == 0:
         return 1
+    elif is_cum_exp and extra_exp<0:
+        return False
     else:
         kiwi_df = df[(df["Type"] == sword_type) &
                 (df["Cumulative EXP"] < extra_exp)]
