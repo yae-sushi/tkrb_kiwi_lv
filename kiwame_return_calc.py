@@ -191,4 +191,4 @@ else:
             To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
             higher."""
 
-st.write(output_text)
+    st.write(output_text)
