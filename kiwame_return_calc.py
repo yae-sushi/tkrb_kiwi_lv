@@ -98,16 +98,16 @@ def validate_exp_remaining(exp_remaining, is_cum_exp):
     except:
         return None
 
-    if exp_remaining == 0:
-        if cur_lv == 99:
-            return -1
-        else:
-            return None
-
     if exp_remaining < 0:
         return None
 
     if not is_cum_exp:
+        if exp_remaining == 0:
+            if cur_lv == 99:
+                return -1
+            else:
+                return None
+
         max_exp_needed = df[(df["Type"] == "Regular") &
                         (df["Lv."] == cur_lv)]["EXP until Next Lv."]
 
