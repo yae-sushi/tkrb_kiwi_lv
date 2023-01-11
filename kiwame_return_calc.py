@@ -15,8 +15,8 @@ KIWI_REQUIREMENTS = {
 TYPE_TO_CATEGORY = {
     "Tantou" : "Tantouwame",
     "Wakizashi" : "Waki, Yari, Nagiwame",
-    "Uchigatana (Current Rarity 2)" : "R3 Uchiwame",
-    "Uchigatana (Current Rarity 3)" : "R4 Uchiwame",
+    "Uchigatana (Current Rarity 2: Silver Crest)" : "R3 Uchiwame",
+    "Uchigatana (Current Rarity 3: Gold Crest)" : "R4 Uchiwame",
     "Tachi" : "Tachiwame",
     "Ootachi" : "Ootachiwame",
     "Yari" : "Waki, Yari, Nagiwame",
@@ -127,7 +127,8 @@ sword_type = TYPE_TO_CATEGORY[st.radio(
     "Sword type?",
     list(TYPE_TO_CATEGORY.keys()))]
 
-is_cum_exp = st.radio("**NEW:** I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?",
+is_cum_exp = st.radio("""**NEW:** I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?
+                        \n[How do I find the cumulative EXP?](https://i.imgur.com/PgU2Ws7.png)""",
             ["Yes",
             "No"])
 
