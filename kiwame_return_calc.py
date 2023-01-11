@@ -122,10 +122,10 @@ was scraped from the TKRB Fandom website at
 https://touken-ranbu.fandom.com/)""")
 
 sword_type = TYPE_TO_CATEGORY[st.radio(
-    "Sword type?",
+    "### Sword type?",
     list(TYPE_TO_CATEGORY.keys()))]
 
-is_cum_exp = st.radio("NEW: I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?",
+is_cum_exp = st.radio("### **NEW:** I can now calculate the return level based on a sword's cumulative EXP! Would you like to use this option?",
             ["Yes",
             "No"])
 
@@ -135,7 +135,7 @@ else:
     is_cum_exp = False
 
 if is_cum_exp:
-    exp = st.text_input('Amount of cumulative EXP?',
+    exp = st.text_input('### Amount of cumulative EXP?',
                     value = "Your number here")
     original_input = exp
     exp = validate_exp_remaining(exp, is_cum_exp)
