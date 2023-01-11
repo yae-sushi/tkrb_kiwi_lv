@@ -92,6 +92,8 @@ def validate_exp_remaining(exp_remaining, is_cum_exp):
     exp_remaining - int - user input as int if valid.
     """
     exp_remaining = exp_remaining.replace("," , "")
+    exp_remaining = exp_remaining.replace("_" , "")
+    exp_remaining = exp_remaining.replace("." , "")
     exp_remaining = "".join(exp_remaining.split())
     try:
         exp_remaining = int(exp_remaining)
