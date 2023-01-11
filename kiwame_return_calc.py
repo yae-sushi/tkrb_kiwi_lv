@@ -187,6 +187,6 @@ else:
             To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
             higher."""
     else:
-        output_text = f"Your sword will return as a :sparkle:level {prediction}:sparkle: kiwame."
+        output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
 
     st.write(output_text)
