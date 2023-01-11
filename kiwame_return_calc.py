@@ -178,17 +178,17 @@ if exp == None:
     else:
         st.write(f"{original_input} is not a valid answer. Please try again.")
 else:
+    tsurugi_text = "No tsurugi currently has a kiwame form. :( \
+                    However, if we assume that they'll follow the same exp requirements \
+                    as ootachis..."
     try:
         prediction = return_level(int(cur_lv), sword_type, int(exp), is_cum_exp)
         output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
-        if sword_type == "Tsurugiwame":
-            output_text = "No tsurugi currently has a kiwame form. :( \
-                However, if we assume that they'll follow the same exp curve \
-                    as ootachis...\n" + output_text
     except:
-        prediction = False
         output_text = f"""Your sword is currently unable to kiwame.
             To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
             higher."""
 
+    if sword_type == "Tsurugiwame":
+        output_text = tsurugi_text + output_text
     st.write(output_text)
