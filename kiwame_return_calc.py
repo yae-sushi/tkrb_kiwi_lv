@@ -70,10 +70,11 @@ def return_level(cur_lv, sword_type, exp = -1, is_cum_exp = False):
     """
     if sword_type == "Tsurugiwame":
         sword_type = "Ootachiwame"
+
     extra_exp = calc_extra_exp(cur_lv, sword_type, exp, is_cum_exp)
     if extra_exp == 0:
         return 1
-    elif is_cum_exp and extra_exp<0:
+    elif extra_exp<0:
         return False
     else:
         kiwi_df = df[(df["Type"] == sword_type) &
@@ -122,7 +123,6 @@ def validate_exp_remaining(exp_remaining, is_cum_exp):
 # set title
 st.title("What level kiwame will my touken danshi be?")
 
-# write a diff line
 st.write("""Let's find out! (The data needed to perform these calculations
 was scraped from the TKRB Fandom website at
 https://touken-ranbu.fandom.com/)""")
@@ -152,7 +152,7 @@ else:
     if sword_type != "Tsurugiwame":
         start_slider_lv = KIWI_REQUIREMENTS[sword_type]
     else:
-        start_slider_lv = KIWI_REQUIREMENTS["Tantouwame"]
+        start_slider_lv = KIWI_REQUIREMENTS["Ootachiwame"]
 
     cur_lv = st.slider("Current toudan level?", 1, 99,
                         start_slider_lv)
