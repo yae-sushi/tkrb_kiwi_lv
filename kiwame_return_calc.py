@@ -68,6 +68,8 @@ def return_level(cur_lv, sword_type, exp = -1, is_cum_exp = False):
     Returns:
     int - level of kiwi toudan expected
     """
+    if sword_type == "Tsurugiwame":
+        sword_type = "Ootachiwame"
     extra_exp = calc_extra_exp(cur_lv, sword_type, exp, is_cum_exp)
     if extra_exp == 0:
         return 1
@@ -169,7 +171,7 @@ else:
             cur_lv = 99
         exp = -1
 
-# make preds from user input
+# make preds from user input and display them
 if exp == None:
     if original_input == '':
         st.write("No input detected. Please try again.")
@@ -178,17 +180,15 @@ if exp == None:
 else:
     try:
         prediction = return_level(int(cur_lv), sword_type, int(exp), is_cum_exp)
+        output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
+        if sword_type == "Tsurugiwame":
+            output_text = "No tsurugi currently has a kiwame form. :( \
+                However, if we assume that they'll follow the same exp curve \
+                    as ootachis...\n" + output_text
     except:
         prediction = False
-
-    #output pred
-    if sword_type == "Tsurugiwame":
-        output_text = "No tsurugi currently has a kiwame form. :("
-    elif not prediction:
         output_text = f"""Your sword is currently unable to kiwame.
             To do so, he must be level {KIWI_REQUIREMENTS[sword_type]} or
             higher."""
-    else:
-        output_text = f"Your sword will return as a :sparkles: level {prediction} kiwame :sparkles:."
 
-    st.write(output_text)
+st.write(output_text)
