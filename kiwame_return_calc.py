@@ -15,8 +15,8 @@ KIWI_REQUIREMENTS = {
 TYPE_TO_CATEGORY = {
     "Tantou" : "Tantouwame",
     "Wakizashi" : "Waki, Yari, Nagiwame",
-    "Uchigatana (Current Rarity 2: Silver Crest)" : "R3 Uchiwame",
-    "Uchigatana (Current Rarity 3: Gold Crest)" : "R4 Uchiwame",
+    "Uchigatana (Ubu Rarity 2: Silver Crest)" : "R3 Uchiwame",
+    "Uchigatana (Ubu Rarity 3: Gold Crest)" : "R4 Uchiwame",
     "Tachi" : "Tachiwame",
     "Ootachi" : "Ootachi, Tsurugiwame",
     "Yari" : "Waki, Yari, Nagiwame",
