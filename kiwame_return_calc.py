@@ -122,7 +122,7 @@ def validate_exp_remaining(exp_remaining, is_cum_exp):
 st.title("What level kiwame will my touken danshi be?")
 
 st.write("""Let's find out! (The data needed to perform these calculations
-was given to me by a friend.""")
+was given to me by a friend.)""")
 
 sword_type = TYPE_TO_CATEGORY[st.radio(
     "Sword type?",
